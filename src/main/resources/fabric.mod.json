@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "brooklyns-weapon-pack",
+	"version": "${version}",
+	"name": "Brooklyn's Weapon Pack",
+	"description": "This is a weapon pack I have made for funsies :3",
+	"authors": [
+		"Brooklyn Brown"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/brooklyns-weapon-pack/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.brookdbrown.weaponspack.BrooklynsWeaponPack"
+		],
+		"client": [
+			"net.brookdbrown.weaponspack.BrooklynsWeaponPackClient"
+		],
+		"fabric-datagen": [
+			"net.brookdbrown.weaponspack.BrooklynsWeaponPackDataGenerator"
+		]
+	},
+	"mixins": [
+		"brooklyns-weapon-pack.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
